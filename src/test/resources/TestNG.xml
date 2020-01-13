@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" parallel="tests" thread-count="4">
+    <test name="Test FlightBooking Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.packages.java.testPackage.FlightBookingTest"/>
+            <class name="com.packages.java.testPackage.RegistrationTest"/>
+            <class name="com.packages.java.testPackage.FlightBookingTest1"/>
+            <class name="com.packages.java.testPackage.RegistrationTest1"/>
+            <class name="com.packages.java.testPackage.FlightBookingTest2"/>
+            <class name="com.packages.java.testPackage.RegistrationTest2"/>
+        </classes>
+    </test>
+    <test name="Test FlightBooking Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.packages.java.testPackage.FlightBookingTest"/>
+            <class name="com.packages.java.testPackage.RegistrationTest"/>
+            <class name="com.packages.java.testPackage.FlightBookingTest1"/>
+            <class name="com.packages.java.testPackage.RegistrationTest1"/>
+            <class name="com.packages.java.testPackage.FlightBookingTest2"/>
+            <class name="com.packages.java.testPackage.RegistrationTest2"/>
+        </classes>
+    </test>
+</suite>
